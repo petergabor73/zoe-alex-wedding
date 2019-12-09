@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+/* verikális ritmus -1rem-nyi alsó margó minden fontosabb elemnek */
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dd,p,figure, pre,table,fieldset,hr {
+  margin-bottom: 1rem;
+}
+
+.location,.gifts,.program,.qanda,.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+body {
+  background-image: url("https://codeberryschool.github.io/wct-4-landing/images/wedding-landing-background.png");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size:cover;
+}
+
+h1, h2 {
+	font-family:'Great Vibes', cursive;
+	font-size:1.125rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
