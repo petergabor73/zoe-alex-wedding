@@ -18,15 +18,14 @@ body {
 }
 
 .location,.gifts,.program,.qanda,.contact {
-  width: 95%;
+  width: 	%;
   margin: 1.5rem auto;
   padding: .5rem 1rem;
   text-align: center;
 }
 
-h1, h2 {
-	font-family:'Great Vibes', cursive;
-	font-size:1.125rem;
+h1,h2 {
+  font-family: 'Great Vibes', cursive;
 }
 
 h2 {
@@ -49,8 +48,7 @@ a:hover {
 
 /* Full screen header setting */
 .cover {
-  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
-  background-size: cover;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
   height: 100vh;
   text-align: center;
   display: table;
@@ -62,16 +60,176 @@ a:hover {
 
 .wrapper {
 	display:inline-block;
-	padding:2rem;
-	background:hsla(100,0%,0%,.5);
-	
+	margin: 0 auto;
+	font-size:2.125rem;
+	padding:.625rem;	
+	width:100vw;
+	background:hsla(100,0%,0%,.3);
 }
 
+.underline {
+  text-transform: uppercase;
+}
+
+.underline::after{
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date:after,.date::before {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
 
 .cover h1{
-	color:#d2ba87;
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-bottom: 0;
 }
 
 .cover p {
-	color:hsla(0,0%,100%,.9)
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  color:hsla(0,0%,100%,.9)
+}
+
+/* --------------- Location part setting ------------------------ */
+.location{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-box{
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item {
+	margin:2rem;
+}
+
+.image {
+	height:7.5rem;
+}
+
+.item p {
+  line-height: 1.5;
+  margin: 0;
+  font-family:'Muli', sans-serif;
+}
+
+.item h3 {
+  font-family:'Libre Baskerville', serif;
+  font-weight: bold;
+}
+
+.item::after{
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: 2px;
+  width: 30vw;
+  margin: 1.5rem auto;
+}
+
+/* --------------- Programs part setting ------------------------ */
+.program{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100vw;
+  background:hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans-serif;
+  color:#d2ba87 
+}
+
+.program h2 {
+  margin-top: 1rem
+}
+
+.program p {
+  font-style:italic;
+}
+
+.program li {
+  text-align: left;
+}
+
+/* --------------- Gifts part setting ------------------------ */
+.gifts img {
+  height:7.5rem;
+}
+
+.gifts p {
+  margin-top:.5rem;
+}
+
+/* --------------- Qanda part setting ------------------------ */
+.qanda{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:100vw;
+  background:hsla(100,0%,0%,.6);
+  font-family: 'Muli', sans-serif;
+  color:#d2ba87 
+}
+
+.qanda-gruop::after{
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 2px;
+  width: 45vw;
+  margin: 1.5rem auto;
+}
+
+.question {
+  font-weight: bold;	
+  margin-bottom:.1rem;
+}
+
+.answer {
+	margin-bottom:1.5rem;
+}
+
+.question,.answer {
+  text-align: left;
+}
+
+.qanda h2 {
+  margin-top: 1rem
+  
+}
+
+/* --------------- Footer part setting ------------------------ */
+footer {
+  width:100vw;
+  height:15vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#606060;
+  font-size: .875rem;
+  margin-bottom:0px;
+}
+
+small {
+  color:#fff;	
+}
+
+footer p {
+  margin-bottom:0px;
 }
