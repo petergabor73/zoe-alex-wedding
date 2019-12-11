@@ -18,7 +18,7 @@ body {
 }
 
 .location,.gifts,.program,.qanda,.contact {
-  width: 	%;
+  width:95%;
   margin: 1.5rem auto;
   padding: .5rem 1rem;
   text-align: center;
@@ -65,10 +65,6 @@ a:hover {
 	padding:.625rem;	
 	width:100vw;
 	background:hsla(100,0%,0%,.3);
-}
-
-.underline {
-  text-transform: uppercase;
 }
 
 .underline::after{
@@ -224,6 +220,8 @@ footer {
   background-color:#606060;
   font-size: .875rem;
   margin-bottom:0px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 small {
@@ -232,4 +230,58 @@ small {
 
 footer p {
   margin-bottom:0px;
+}
+
+/* --------------- Settings over 768px ------------------------ */
+@media (min-width: 768px) {
+  .underline {
+    text-transform: uppercase;
+  }
+  
+  .cover h1{
+    font-size: 7rem;
+  }
+  
+  .wrapper {
+	  width:60vw;
+  }
+  
+  .item-box{
+    display: flex;
+  }
+  
+  .item::after{
+    height: 0px;
+  }
+  
+  .program{
+    justify-content: center;
+    align-items: center;
+}
+  
+  .program-box{
+	display:inline-block;
+  }
+  
+  .qanda-frame{
+    display: flex;
+  }
+  
+  .qanda-gruop {
+	  padding:1rem;
+	  margin: .5rem;
+	  width:30%;
+	  vertical-align: top;
+	  
+  }
+  
+  .qanda-gruop::after{
+    height: 0px;
+  }
+  
+  footer {
+	height:7vh;
+	
+  }
+  
 }
